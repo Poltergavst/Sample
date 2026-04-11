@@ -7,6 +7,6 @@ public class RotationTweener : BaseTweener
 
     protected override void MakeTween()
     {
-        transform.DORotate(_degrees, Duration, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1, LoopType.Incremental);
+        transform.DORotate(_degrees, Duration, RotateMode.FastBeyond360).SetEase(Ease).SetLoops(-1, LoopType.Incremental);
     }
 }

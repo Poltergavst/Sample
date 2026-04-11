@@ -7,6 +7,6 @@ public class PositionTweener : BaseTweener
 
     protected override void MakeTween()
     {
-        transform.DOMove(_distance, Duration).SetRelative().SetEase(Ease.InBounce).SetLoops(-1, LoopType.Yoyo);
+        transform.DOMove(_distance, Duration).SetRelative().SetEase(Ease).SetLoops(-1, LoopType.Yoyo);
     }
 }

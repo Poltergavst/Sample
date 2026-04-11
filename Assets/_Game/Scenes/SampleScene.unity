@@ -509,6 +509,8 @@ GameObject:
   - component: {fileID: 1125481947}
   - component: {fileID: 1125481946}
   - component: {fileID: 1125481945}
+  - component: {fileID: 1125481951}
+  - component: {fileID: 1125481950}
   - component: {fileID: 1125481949}
   m_Layer: 0
   m_Name: TransformerCube
@@ -619,13 +621,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 1125481944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce18774d904229843a04a9881e339183, type: 3}
+  m_Script: {fileID: 11500000, guid: 656cf3171932cd14d80f060024d7b94d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TransformTweener
+  m_EditorClassIdentifier: Assembly-CSharp::ScaleTweener
   Duration: 2
-  _distance: {x: 3, y: 0, z: 0}
-  _degrees: {x: 0, y: 0, z: 0}
-  _targetSize: {x: 0, y: 0, z: 0}
+  Ease: 0
+  _targetSize: {x: 2, y: 2, z: 2}
+--- !u!114 &1125481950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125481944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7554264e8ea0b2478b247eee2a63a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationTweener
+  Duration: 3
+  Ease: 0
+  _degrees: {x: 0, y: 360, z: 0}
+--- !u!114 &1125481951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125481944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb084a51f46a154d9f054ccf4931b00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PositionTweener
+  Duration: 6
+  Ease: 0
+  _distance: {x: 2, y: 0, z: 0}
 --- !u!1 &1212901228
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScaleTweener
   Duration: 1
+  Ease: 0
   _targetSize: {x: 2, y: 2, z: 2}
 --- !u!1 &1813902889
 GameObject:
@@ -881,6 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotationTweener
   Duration: 3
+  Ease: 1
   _degrees: {x: 360, y: 360, z: 0}
 --- !u!1 &2106050498
 GameObject:
@@ -1008,6 +1041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PositionTweener
   Duration: 2
+  Ease: 29
   _distance: {x: 0, y: 1, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
