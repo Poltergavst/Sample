@@ -13,8 +13,8 @@ public abstract class BaseTweener : MonoBehaviour
             Ease = Ease.Linear;
         }
 
-        MakeTween();
+        MakeTween().SetEase(Ease);
     }
 
-    protected abstract void MakeTween();
+    protected abstract Tween MakeTween();
 }

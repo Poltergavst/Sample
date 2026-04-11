@@ -5,8 +5,8 @@ public class PositionTweener : BaseTweener
 {
     [SerializeField] private Vector3 _distance;
 
-    protected override void MakeTween()
+    protected override Tween MakeTween()
     {
-        transform.DOMove(_distance, Duration).SetRelative().SetEase(Ease).SetLoops(-1, LoopType.Yoyo);
+        return transform.DOMove(_distance, Duration).SetRelative().SetLoops(-1, LoopType.Yoyo);
     }
 }

@@ -14,8 +14,8 @@ public class ColorTweener : BaseTweener
         base.Start();
     }
 
-    protected override void MakeTween()
+    protected override Tween MakeTween()
     {
-        _material.DOColor(_color, Duration).SetEase(Ease).SetLoops(-1, LoopType.Yoyo);
+        return _material.DOColor(_color, Duration).SetLoops(-1, LoopType.Yoyo);
     }
 }

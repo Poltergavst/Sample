@@ -5,8 +5,8 @@ public class RotationTweener : BaseTweener
 {
     [SerializeField] private Vector3 _degrees;
 
-    protected override void MakeTween()
+    protected override Tween MakeTween()
     {
-        transform.DORotate(_degrees, Duration, RotateMode.FastBeyond360).SetEase(Ease).SetLoops(-1, LoopType.Incremental);
+        return transform.DORotate(_degrees, Duration, RotateMode.FastBeyond360).SetLoops(-1, LoopType.Incremental);
     }
 }
